@@ -1,0 +1,49 @@
+### get users ✅
+GET http://localhost:6969/users
+
+### get user by email ✅
+GET http://localhost:6969/users/teletubi43@gmail.com
+
+### log in ✅
+POST http://localhost:6969/users/log-in
+Content-Type: application/json
+
+{
+  "email": "teletubi4@gmail.com",
+  "password": "ekisde24"
+}
+
+### log out ✅
+POST http://localhost:6969/users/log-out
+
+### create user  ✅
+POST  http://localhost:6969/users/sign-in
+Content-Type: application/json
+
+{
+  "username": "Bryan",
+  "email": "teletubi4@gmail.com",
+  "password": "ekisde24"
+}
+
+### update password turbo✅
+PATCH  http://localhost:6969/users/update-password
+Content-Type: application/json
+
+{
+  "email": "teletubi4@gmail.com",
+  "password": "ekisde243",
+  "newPassword": "ekisde2434"
+}
+
+### delete user ✅
+DELETE  http://localhost:6969/users/delete-user/teletubi4@gmail.com
+
+### update user name ✅
+PATCH  http://localhost:6969/users/update-username
+Content-Type: application/json
+
+{
+  "email": "teletubi43@gmail.com",
+  "newUserName": "Jesus"
+}
